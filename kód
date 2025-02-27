@@ -5,7 +5,8 @@ sudo airmon-ng start wlan0
 sudo airmon-ng 
 //hálózatok listázása (BSSID, channel érdekel)
 sudo airodump-ng wlan0
-
+//kivalasztott figyelese
+sudo airodump-ng wlan0 -d (bssid)
 //2. ablak, monitoring
 sudo airodump-ng -w név1 -c 2 --bssid bssid szám wlan0
 
