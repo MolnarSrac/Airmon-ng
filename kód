@@ -1,3 +1,5 @@
+//install aircrack-ng
+sudo apt install aircrack-ng
 //hálózatok
 iwconfig
 //monitor mód a wifi driveren
